@@ -20,23 +20,42 @@ To write a program to perform selection sort and insertion sort using python pro
 ## Program:
 i)	#Selection Sort
 ```
+#developed By : MANIKUMAR D.K
+#Register Number : 212223230121
 
-
-
-
+def selection_sort(nums):
+    for i in range(len(nums)):
+        lowest_value_index=i
+        for j in range(i+1,len(nums)):
+            if nums[j]<nums[lowest_value_index]:
+                lowest_value_index=j
+        nums[i],nums[lowest_value_index]=nums[lowest_value_index],nums[i]
+list_of_nums = eval(input())
+selection_sort(list_of_nums)
+print(list_of_nums)
 
 ```
 ii)	#Insertion Sort
 ```
+#Developed By : MANIKUMAR D.K
+#register Number : 212223230121
 
-
-
-
-
-
+def insertion_sort(nums):
+    for i in range(1,len(nums)):
+        item_to_insert=nums[i]
+        j=i-1
+        while j>=0 and nums[j]>item_to_insert:
+            nums[j+1]=nums[j]
+            j-=1
+            nums[j+1] = item_to_insert
+list_of_nums = eval(input())
+insertion_sort(list_of_nums)
+print(list_of_nums)
 ```
 
 ## Output:
+![Screenshot 2024-04-07 222548](https://github.com/MANIKUMARDK/Sorting-Algorithms/assets/147215581/3a9c87e3-b34e-4351-93f8-aee6561df75c)
+![Screenshot 2024-04-07 222601](https://github.com/MANIKUMARDK/Sorting-Algorithms/assets/147215581/b1b32ebd-8d4e-4554-a37a-5731143defb6)
 
 
 ## Result:
